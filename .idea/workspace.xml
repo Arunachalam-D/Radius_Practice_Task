@@ -4,9 +4,17 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ffa6e17e-8a44-4372-9ca4-4bc2ead07b37" name="Changes" comment="First commit">
+    <list default="true" id="ffa6e17e-8a44-4372-9ca4-4bc2ead07b37" name="Changes" comment="set loader">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/radius_practice/assets/images/login_image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/radius_practice/lib/bloc/login_bloc/login_bloc.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/radius_practice/lib/bloc/login_bloc/login_event.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/radius_practice/lib/bloc/login_bloc/login_state.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/radius_practice/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/radius_practice/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/radius_practice/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/radius_practice/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/radius_practice/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/radius_practice/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/radius_practice_task.iml" beforeDir="false" afterPath="$PROJECT_DIR$/radius_practice_task.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,8 +43,10 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "cidr.known.project.marker": "true",
     "dart.analysis.tool.window.visible": "false",
+    "last_opened_file_path": "/Users/nova/Documents/Flutter Practice/Radius_Practice_Task/radius_practice/assets/images",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -44,6 +54,11 @@
     "show.migrate.to.gradle.popup": "false"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/radius_practice/assets/images" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter">
       <option name="filePath" value="$PROJECT_DIR$/lib/main.dart" />
@@ -87,7 +102,21 @@
       <option name="project" value="LOCAL" />
       <updated>1703844740024</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="branch created">
+      <created>1703844993519</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1703844993519</updated>
+    </task>
+    <task id="LOCAL-00006" summary="branch created">
+      <created>1703845002270</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1703845002270</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -103,6 +132,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+    <MESSAGE value="branch created" />
+    <MESSAGE value="set loader" />
+    <option name="LAST_COMMIT_MESSAGE" value="set loader" />
   </component>
 </project>
