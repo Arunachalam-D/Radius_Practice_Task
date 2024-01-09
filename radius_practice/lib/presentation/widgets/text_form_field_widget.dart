@@ -1,71 +1,61 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
-TextFormField reusableTextField(IconData icon, bool isPasswordType,
-    TextEditingController controller, String type,IconData ? suffIcon) {
-  bool _autoValidate = false;
-  bool mail = false;
-  return TextFormField(
+import '../../bloc/login_bloc/login_bloc.dart';
+
+reusableTextField(IconData icon, bool isPasswordType,
+    TextEditingController controller, String type,bool isRequired,Function onTap) {
+
+    return BlocBuilder<LoginBloc, LoginState>(
+  builder: (context, state) {
+    bool isVisible =  state is PasswordVisibleState && state.isPasswordVisible;
+    return TextFormField(
     controller: controller,
-    obscureText: isPasswordType,
+    obscureText: !isVisible,
     enableSuggestions: !isPasswordType,
     autocorrect: !isPasswordType,
     cursorColor: Colors.black,
-    style: const TextStyle(color: Colors.black54),
+    style:  TextStyle(color: Colors.black,fontWeight:isVisible ? FontWeight.normal:FontWeight.bold ),
     decoration: InputDecoration(
+      contentPadding: const EdgeInsets.all(18),
       prefixIcon: Icon(
         icon,
         color: Colors.grey,
       ),
-      suffixIcon: Icon(
-        suffIcon,
+
+      suffixIcon: isRequired ? GestureDetector(onTap: () {
+        onTap();
+      }, child: Icon(
+        isVisible
+            ? Icons.visibility
+            : Icons.visibility_off,
         color: Colors.grey,
       ),
-      labelStyle: const TextStyle(color:Colors.black38),
+      ) : null,
+      labelStyle: const TextStyle(color:Colors.black38,fontSize: 160),
       filled: true,
       floatingLabelBehavior: FloatingLabelBehavior.never,
       fillColor: Colors.transparent,
-      border: OutlineInputBorder(
-        borderRadius: BorderRadius.circular(5),
-        borderSide: BorderSide(color: Colors.grey),
-      ),
+
       focusedBorder: OutlineInputBorder(
-        borderSide: BorderSide(color: Colors.blue),
+        borderSide: const BorderSide(color: Color(0xff2c68ec),width: 1),
         borderRadius: BorderRadius.circular(5),
       ),
       enabledBorder: OutlineInputBorder(
-        borderSide: BorderSide(color: Colors.grey),
+        borderSide:const  BorderSide(color: Colors.grey,width: 0.5),
         borderRadius: BorderRadius.circular(5),
       ),
-      errorBorder: OutlineInputBorder(
-        borderSide: BorderSide(color: Colors.red), // Change color as needed
-        borderRadius: BorderRadius.circular(10),
-      ),
-    ),
-    autovalidateMode: AutovalidateMode.onUserInteraction,
-    onChanged: (value) {
-      _autoValidate = true;
-    },
-    validator: (value) {
-      bool emailValid = RegExp(
-          r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+")
-          .hasMatch(value!);
 
-      if (value!.isEmpty) {
-        return 'Enter $type';
-      } else if (type == "email" && !emailValid) {
-        return "Enter Valid Email";
-      } else if (type == "password" && controller.text.length < 8) {
-        return "Password must be atLeast 8 characters";
-      } else if (type == "name" && controller.text.length < 3) {
-        return "Username must be atLeast 3 characters";
-      }
-      mail = true;
-      return null;
-    },
+    ),
+
     keyboardType: isPasswordType
         ? TextInputType.visiblePassword
         : TextInputType.emailAddress,
   );
+  },
+);
+
+
 }
 
 GestureDetector reusableButton(BuildContext context, String type, Function onTap) {
@@ -76,7 +66,7 @@ GestureDetector reusableButton(BuildContext context, String type, Function onTap
       padding: const EdgeInsets.symmetric(vertical: 13, horizontal: 10),
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(5),
-          color: Colors.blue[700],),
+          color: const Color(0xff2c68ec),),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -84,9 +74,12 @@ GestureDetector reusableButton(BuildContext context, String type, Function onTap
             type,
             style: const TextStyle(fontWeight: FontWeight.bold,color: Colors.white),
           ),
-          Padding(
-            padding: const EdgeInsets.only(left: 12.0),
-            child: const Icon(Icons.arrow_back,color: Colors.white,),
+           Padding(
+            padding:  const EdgeInsets.only(left: 12.0),
+            child:  Transform.rotate(
+              angle: 3.141592,
+                child:const Icon(Icons.arrow_right_alt,color: Colors.white)
+            ),
           ),
         ],
       ),

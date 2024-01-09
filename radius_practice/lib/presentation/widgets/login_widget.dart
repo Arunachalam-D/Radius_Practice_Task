@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:radius_practice/presentation/widgets/text_form_field_widget.dart';
 
+import '../../bloc/login_bloc/login_bloc.dart';
 import '../../core/colors.dart';
 import '../../core/dimensions.dart';
 
@@ -38,7 +40,7 @@ class LoginWidget extends StatelessWidget {
                 children: [
                   Image.asset("assets/images/rd-logo.png",width: 220,),
                   Padding(
-                    padding:  EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width/10),
+                    padding:  EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width/10, ),
                     child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                      crossAxisAlignment: CrossAxisAlignment.start,
@@ -46,11 +48,14 @@ class LoginWidget extends StatelessWidget {
                        loginSpace(),
                        const Text("Email"),
                        labelSpace(),
-                       reusableTextField(Icons.email_outlined,false,emailController,"email",null),
+                       reusableTextField(Icons.mail_outline,false,emailController,"email",false,(){}),
                        loginSpace(),
                        const Text("Password"),
                        labelSpace(),
-                       reusableTextField(Icons.lock_outline_rounded,true,passwordController,"password",Icons.remove_red_eye),
+                       reusableTextField(Icons.lock_outline,true,passwordController,"password",true,(){
+                         BlocProvider.of<LoginBloc>(context).add(LoginPasswordVisibleEvent(),);
+                       }
+                       ),
                        buttonSpace(),
                        reusableButton(context,"LOG IN",(){}),
                      ],
