@@ -4,17 +4,8 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ffa6e17e-8a44-4372-9ca4-4bc2ead07b37" name="Changes" comment="set loader">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/radius_practice/assets/images/login_image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/radius_practice/lib/bloc/login_bloc/login_bloc.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/radius_practice/lib/bloc/login_bloc/login_event.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/radius_practice/lib/bloc/login_bloc/login_state.dart" afterDir="false" />
+    <list default="true" id="ffa6e17e-8a44-4372-9ca4-4bc2ead07b37" name="Changes" comment="UI design done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/radius_practice/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/radius_practice/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/radius_practice/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/radius_practice/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/radius_practice/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/radius_practice/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/radius_practice_task.iml" beforeDir="false" afterPath="$PROJECT_DIR$/radius_practice_task.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,22 +29,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "cidr.known.project.marker": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "last_opened_file_path": "/Users/nova/Documents/Flutter Practice/Radius_Practice_Task/radius_practice/assets/images",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "AndroidSdkUpdater",
-    "show.migrate.to.gradle.popup": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/nova/Documents/Flutter Practice/Radius_Practice_Task&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;AndroidSdkUpdater&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/radius_practice/assets/images" />
@@ -116,7 +107,42 @@
       <option name="project" value="LOCAL" />
       <updated>1703845002270</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="set loader">
+      <created>1703856726153</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1703856726153</updated>
+    </task>
+    <task id="LOCAL-00008" summary="set Bloc">
+      <created>1703856742499</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1703856742499</updated>
+    </task>
+    <task id="LOCAL-00009" summary="set Bloc">
+      <created>1703856752231</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1703856752231</updated>
+    </task>
+    <task id="LOCAL-00010" summary="set Bloc">
+      <created>1704188086330</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1704188086330</updated>
+    </task>
+    <task id="LOCAL-00011" summary="UI design done">
+      <created>1704188210420</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1704188210420</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -134,6 +160,9 @@
     <MESSAGE value="First commit" />
     <MESSAGE value="branch created" />
     <MESSAGE value="set loader" />
-    <option name="LAST_COMMIT_MESSAGE" value="set loader" />
+    <MESSAGE value="Set Bloc" />
+    <MESSAGE value="set Bloc" />
+    <MESSAGE value="UI design done" />
+    <option name="LAST_COMMIT_MESSAGE" value="UI design done" />
   </component>
 </project>

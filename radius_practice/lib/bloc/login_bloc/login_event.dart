@@ -9,9 +9,7 @@ class LoginOnLoadEvent extends LoginEvent{
   const LoginOnLoadEvent();
 }
 
-class LoginPasswordVisibleEvent extends LoginEvent{
-  const LoginPasswordVisibleEvent();
-}
+class LoginPasswordVisibleEvent extends LoginEvent{}
 
 class LoginDetailsSubmitEvent extends LoginEvent{
   final String? email;
